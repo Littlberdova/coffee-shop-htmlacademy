@@ -1,0 +1,30 @@
+.cart-button {
+    cursor: pointer;
+    border: none;
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(120, 89, 207, 1);
+    padding-left: 46px;
+    padding-right: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 4px;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        background-image: url(../../img/Union.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 20px;
+        height: 16px;
+        left: 20px;
+        top: 50%;
+        bottom: 50%;
+        transform: translateY(-50%);
+    }
+}

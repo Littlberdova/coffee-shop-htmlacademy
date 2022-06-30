@@ -1,0 +1,20 @@
+.filter-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.filter-list__item {
+    position: relative;
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: @tablet-width) {
+
+    .filter-list {
+        display: flex;
+        flex-direction: column;
+    }
+}

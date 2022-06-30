@@ -1,0 +1,33 @@
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    --swiper-navigation-size: 20px; 
+    color: rgba(120, 89, 207, 1);
+}
+
+.swiper-pagination {
+    display: none;
+}
+
+.swiper-button-prev {
+    left: 0;
+}
+
+.swiper-button-next {
+    right: 0;
+}
+
+
+@media (min-width: @desktop-width) {
+    .swiper-pagination {
+        display: block;
+    }
+
+    .swiper-pagination-bullet {
+        --swiper-pagination-border-radius: 0;
+        --swiper-pagination-bullet-width: 62px;
+        --swiper-pagination-bullet-height: 4px;
+        --swiper-pagination-color: rgba(120, 89, 207, 1);
+        --swiper-pagination-bullet-inactive-color: rgba(255, 255, 255, 1);
+        --swiper-pagination-bullet-inactive-opacity: 1;
+    }
+}

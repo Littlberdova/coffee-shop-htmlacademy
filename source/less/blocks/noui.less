@@ -1,0 +1,32 @@
+.noUi-background {
+    background-color: rgba(226, 226, 226, 1);
+    border: none;
+    box-shadow: none;
+    height: 2px;
+}
+
+.noUi-connect {
+    background-color: rgba(144, 112, 236, 1);
+    border: none;
+    box-shadow: none;
+    height: 2px;
+}
+
+.noUi-horizontal .noUi-handle {
+
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    box-shadow: none;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -6px;
+
+
+    &::after,
+    &::before {
+        content: none;
+    }
+}
+

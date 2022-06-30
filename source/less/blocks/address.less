@@ -1,0 +1,25 @@
+.address {
+    margin-bottom: 16px;
+    position: relative;
+}
+
+.address__note {
+    display: block;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 20px;
+    padding-left: 16px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        background-image: url(../../img/place.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 13px;
+        height: 16px;
+        left: 0;
+        top: 0;
+    }
+    
+}

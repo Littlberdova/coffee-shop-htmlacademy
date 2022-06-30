@@ -1,0 +1,85 @@
+.availability-filter__option-name {
+    padding-left: 34px;
+}
+
+.availability-filter__input-mark {
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 1);
+        border: 2px solid rgba(189, 189, 189, 1);
+        left: 0;
+        top: 50%;
+        bottom: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.control-input__label {
+
+    &:hover .availability-filter__input-mark::before {
+        border-color: rgba(144, 112, 236, 1);
+    }
+
+    &:hover .availability-filter__input-mark::after {
+        position: absolute;
+        content: "";
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: rgba(120, 89, 207, 0.25);
+        top: 50%;
+        transform: translateY(-50%);
+        left: 6px;
+    }
+}
+
+.availability-filter__input[type="radio"]:checked ~ .control-input__label .availability-filter__input-mark::after {
+    background-color: rgba(120, 89, 207, 1);
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 6px;
+}
+
+.availability-filter__input[type="radio"]:checked ~ .control-input__label .availability-filter__input-mark::before {
+    border-color: rgba(144, 112, 236, 1);
+}
+
+.availability-filter__input--disabled[type="radio"]:checked ~ .control-input__label .availability-filter__input-mark::after {
+    background-color:rgba(226, 226, 226, 1);
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 6px;
+}
+
+.availability-filter__input--disabled[type="radio"]:checked ~ .control-input__label .availability-filter__input-mark::before {
+    border-color: rgba(226, 226, 226, 1);
+}
+
+.availability-filter__input--disabled[type="radio"]:checked ~ .control-input__label .availability-filter__option-name{
+    color: rgba(189, 189, 189, 1);
+}
+
+.availability-filter__input--disabled[type="radio"] ~ .control-input__label .availability-filter__input-mark::before {
+    border-color: rgba(226, 226, 226, 1);
+    background-color: rgba(248, 248, 248, 1);
+}
+
+.availability-filter__input--disabled[type="radio"] ~ .control-input__label .availability-filter__option-name{
+    color: rgba(189, 189, 189, 1);
+}
+    

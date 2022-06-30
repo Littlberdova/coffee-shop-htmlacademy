@@ -1,0 +1,142 @@
+.taste {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 60px;
+}
+
+.taste__description-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.taste__picture {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.taste__note {
+    color: rgba(120, 89, 207, 1);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.taste__description-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    margin: 0;
+    padding: 0;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    text-align: center;
+    overflow-wrap: break-word;
+    width: 280px;
+}
+
+.taste__description {
+    margin: 0;
+    text-align: center;
+    margin-bottom: 20px;
+    overflow-wrap: break-word;
+    width: 280px;
+}
+
+.taste__price-wrapper {
+    align-self: normal;
+    display: flex;
+    justify-content: space-between;
+}
+
+.taste__button {
+    margin-left: 20px;
+    cursor: pointer;
+    min-width: 113px;
+    padding: 8px 20px;
+    background-color: rgba(120, 89, 207, 1);
+    border: none;
+    border-radius: 4px;
+    color: rgba(255, 255, 255, 1);
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.taste__price {
+    color: rgba(51, 51, 51, 1);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+
+    del {
+        color: rgba(120, 89, 207, 1);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 32px;
+        margin-right: 6px;
+    }
+}
+
+@media (min-width: @tablet-width) {
+
+  .taste__description-wrapper {
+    order: -1;
+  }
+
+ .taste__description-title {
+    font-size: 56px;
+    line-height: 80px;
+    margin-bottom: 16px;
+    width: 608px;
+ }
+
+ .taste__description {
+    font-size: 20px;
+    line-height: 32px;
+    width: 608px;
+ }
+
+ .taste__price-wrapper {
+    justify-content: center;
+ }
+
+}
+
+@media (min-width: @desktop-width) {
+
+  .taste {
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 60px;
+ }
+
+ .taste__description-wrapper {
+    order: 1;
+    align-items: flex-start;
+ }
+
+ .taste__picture {
+    margin-bottom: 0;
+ }
+
+.taste__description-title {
+    width: 625px;
+    text-align: left;
+}
+
+ .taste__description {
+    text-align: left;
+    margin-bottom: 40px;
+    width: 625px;
+ }
+
+ .taste__price-wrapper {
+    align-self: normal;
+    display: flex;
+    justify-content: flex-start;
+ }
+
+}

@@ -1,0 +1,46 @@
+.sorting {
+    margin-bottom: 20px;
+}
+
+.sorting__form-name {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.sorting__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.sorting__list {
+    border: none;
+    background-color: transparent;
+    color: rgba(120, 89, 207, 1);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 4px;
+    padding: 4px 10px;
+
+    &:hover {
+        background-color: rgba(240, 235, 255, 1);
+    }
+
+    &:focus-within {
+        outline: none;
+        background-color: rgba(240, 235, 255, 1);
+    }
+}
+
+@media (min-width: @tablet-width) {
+
+    .sorting__form {
+        justify-content: flex-end;
+    }
+
+    .sorting__form-name {
+        margin-right: 10px;
+    }
+}

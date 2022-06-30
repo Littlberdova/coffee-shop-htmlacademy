@@ -1,0 +1,23 @@
+.phone {
+    position: relative;
+}
+
+.phone__link {
+    text-decoration: none;
+    cursor: pointer;
+    color: rgba(51, 51, 51, 1);
+    font-style: normal;
+    padding-left: 19px;
+
+    &::before {
+        position: absolute;
+        content: "";
+        background-image: url(../../img/phone.svg);
+        width: 13px;
+        height: 16px;
+        left: 0;
+        top: 50%;
+        bottom: 50%;
+        transform: translateY(-50%);
+    }
+}
